@@ -1,0 +1,75 @@
+body {
+    height: 100%;
+    background-color: rgb(142, 150, 137);
+}
+.title {
+    text-align: center;
+    color:rgb(233, 231, 231);
+}
+.game-table {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(108, 128, 108);
+    border: 10px rgb(248, 215, 145) solid;
+    border-radius: 0px 0px 30% 30%;
+}
+.deck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 201, 202);
+    width: 80px;
+    height: 120px;
+    box-shadow: -2px 2px 0px rgb(133, 133, 133),
+    -4px 4px 0px rgb(90, 89, 89),
+    -6px 6px 0px rgb(48, 47, 47);
+    cursor: pointer;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: rgb(202, 201, 202);
+    width: 80px;
+    height: 120px;
+    box-shadow: 2px 2px 2px rgb(68, 67, 67);
+}
+.row {
+    display: flex;
+    justify-content: flex-end;
+    height: 20vh;
+    min-height: 100px;
+}
+.hand {
+    justify-content: center;
+}
+.dealer-cards, .player-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.actions {
+    display: flex;
+    visibility: hidden;
+    justify-content: space-evenly;
+}
+.result {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(143, 165, 154, 0.753);
+}
+.result-message {
+    max-width: 200px;
+    padding: 10vh;
+    background-color: rgb(108, 128, 108);
+    color: whitesmoke;
+}
